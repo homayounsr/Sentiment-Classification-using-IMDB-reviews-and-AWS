@@ -10,7 +10,7 @@ The dataset was collected using my web scraping code that retrieved movie review
 - **Data Cleaning:** Removed null values and irrelevant characters, handled punctuation, and eliminated stop words. The size of data after removing null values were 32505 rows and 2 columns
 - **Labeling:** Categorized reviews into sentiment classes based on their ratings (1-3 as negative, 4-6 as neutral, 7-10 as positive).
 - **Class Imbalance Check:** Identified an imbalance among sentiment classes, with the negative class having the lowest representation.
-- <img src="./Plots/class imbalance.png"  />
+<img src="./Plots/class imbalance.png"  />
 - **Tokenization:** Processed the cleaned data and organized it into a structured DataFrame for further analysis.
 
 ## Model Building
