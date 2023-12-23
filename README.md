@@ -21,8 +21,10 @@ The dataset was collected using my web scraping code that retrieved movie review
 ### 2. Word2Vec Embedding & XGBoost
 - Employed Word2Vec for embedding and trained an XGBoost model for classification.
 - Experienced a notable increase in accuracy compared to Blazing Text, achieving around 63% accuracy for test data and %77 for training data.
-- - <img src="./Plots/learning curve xgboost model.png"  />
+- <img src="./Plots/learning curve xgboost model.png"  />
 This plot shows that the model is not either underfit or overfit and it is trained well.
+- The confusion matrix for this model is showing below:
+- <img src="./Plots/confusion matrix xgboost model.png"  />
 - However, faced challenges related to high dimensionality and slower processing speed.
 
 ### 3. PCA for Dimensionality Reduction
