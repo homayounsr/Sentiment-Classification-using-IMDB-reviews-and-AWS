@@ -31,6 +31,8 @@ To map the classes with the XGBoost model I had to change the class to 0, 1 and 
 ### 3. PCA for Dimensionality Reduction
 - Implemented Principal Component Analysis (PCA) to reduce dimensions while maintaining accuracy.
 - Significantly improved code efficiency and model building speed without compromising accuracy.
+
+
 These plots are showing the leaning curve, cost function and confusion matrix for the model.
 <img src="./Plots/learning curve xgboost-pca model.png"  />
 <img src="./Plots/cost function xgboost pca model.png"  />
