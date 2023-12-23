@@ -25,6 +25,7 @@ The dataset was collected using my web scraping code that retrieved movie review
 This plot shows that the model is not either underfit or overfit and it is trained well.
 - The confusion matrix for this model is showing below:
 - <img src="./Plots/confusion matrix xgboost model.png"  />
+To map the classes with the XGBoost model I had to change the class to 0, 1 and 2
 - However, faced challenges related to high dimensionality and slower processing speed.
 
 ### 3. PCA for Dimensionality Reduction
