@@ -9,7 +9,7 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 ## Exploratory Data Analysis and Preprocessing
 - **Data Cleaning:** After removing null values and eliminating irrelevant characters, punctuation, and stop words, my dataset was reduced to 32,505 rows and 2 columns.
 - **Labeling:** I categorized reviews into sentiment classes based on their ratings (1-3 as negative, 4-6 as neutral, 7-10 as positive).
-- **Class Imbalance Check:** I observed an imbalance among sentiment classes, with the negative class having the lowest representation.
+- **Class Imbalance Check:** I observed an imbalance among sentiment classes, particularly with the negative class having the lowest representation. To address this, I could gather more data, synthesize additional data, perform oversampling, or employ an algorithm designed to handle data imbalances, like XGBoost.
 - **Tokenization:** Following data cleaning, I tokenized and structured the cleaned data into a formatted DataFrame for further analysis.
 - The plot below displays the count of each class within the dataset.
 <img src="./Plots/class imbalance.png"  />
