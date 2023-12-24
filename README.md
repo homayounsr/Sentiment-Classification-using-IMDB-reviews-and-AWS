@@ -33,13 +33,13 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 ### 3. PCA for Dimensionality Reduction
 - To reduce dimensions while maintaining accuracy, I implemented Principal Component Analysis (PCA).
 - This significantly improved code efficiency and model building speed without compromising accuracy.
-  <img src="./Plots/learning curve xgboost-pca model.png"  />
-Learning curve for XGBoost model combined with PCA
+ 
+-Learning curve for XGBoost model combined with PCA
+   <img src="./Plots/learning curve xgboost-pca model.png"  />
+-Cost function for XGBoost model combined with PCA
   <img src="./Plots/cost function xgboost pca model.png"  />
-Cost function for XGBoost model combined with PCA
-  <img src="./Plots/confusion matrix xgboost-pca model.png"  />
-Confusion matrix for XGBoost model combined with PCA
-
+-Confusion matrix for XGBoost model combined with PCA
+<img src="./Plots/confusion matrix xgboost-pca model.png"  />
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
 | 0.88   | 0.62   | 0.61   | 0.62   |
