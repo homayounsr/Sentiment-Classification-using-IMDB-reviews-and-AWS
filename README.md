@@ -35,15 +35,28 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - <img src="./Plots/cost function xgboost pca model.png"  />
 - <img src="./Plots/confusion matrix xgboost-pca model.png"  />
 
+| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
+| -------- | -------- | -------- | -------- |
+| 0.88   | 0.62   | 0.61   | 0.62   |
+
 ### 4. Addressing Class Imbalance
 - Despite efforts, oversampling the minority class (negative sentiment) only yielded a maximum accuracy of around 61%.
 
+| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
+| -------- | -------- | -------- | -------- |
+| 0.83  | 0.61  | 0.62   | 0.61   |
+
 ### 5. SVM with RBF Kernel
-- Exploring Support Vector Machines (SVM) with an RBF kernel, I achieved similar accuracy (~62%) to XGBoost.
+- Exploring Support Vector Machines (SVM) with an RBF kernel, I achieved similar accuracy (~61%) to XGBoost.
 - <img src="./Plots/learning curve svm-pca model.png"  />
 - <img src="./Plots/confusion matrix svm-pca model.png"  />
 - To determine the best value for the C parameter in SVM, I used a vector of random numbers from 0 to 100, finding 10 as the optimal value.
 - <img src="./Plots/svm C parameter choose.png"  />
+
+
+| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
+| -------- | -------- | -------- | -------- |
+| 0.80   | 0.60  | 0.59   | 0.60  |
 
 ## Conclusion and Insights
 Through this project, I made several key findings:
