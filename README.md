@@ -42,7 +42,6 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 
 ## Conclusion and Insights
 Through this project, I made several key findings:
-- Maximum accuracy plateaued at around 63% due to a lack of the data.
 - BlazingText cannot deal with class imbalance
 - Consistency in accuracy across different models (XGBoost, SVM) indicated limitations in surpassing the 63% mark.
 - Insights gained in handling class imbalances and using PCA for more efficient modeling.
