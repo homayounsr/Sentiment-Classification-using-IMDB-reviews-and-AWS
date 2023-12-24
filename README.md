@@ -18,10 +18,10 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - I initially employed Blazing Text for classification but encountered accuracy issues (~47%) due to class imbalance.
 
 ### 2. Word2Vec Embedding & XGBoost
-- Implementing Word2Vec for embedding, I trained an XGBoost model achieving around 63% accuracy for test data and 77% for training data.
-- <img src="./Plots/learning curve xgboost model.png"  />
-- <img src="./Plots/confusion matrix xgboost model.png"  />
-- However, high dimensionality and slower processing speed were challenges faced.
+Implementing Word2Vec for embedding, I trained an XGBoost model achieving around 63% accuracy for test data and 77% for training data.
+<img src="./Plots/learning curve xgboost model.png"  />
+<img src="./Plots/confusion matrix xgboost model.png"  />
+**However, high dimensionality and slower processing speed were challenges faced.**
 
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
@@ -48,10 +48,10 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 
 ### 5. SVM with RBF Kernel
 - Exploring Support Vector Machines (SVM) with an RBF kernel, I achieved similar accuracy (~61%) to XGBoost.
-- <img src="./Plots/learning curve svm-pca model.png"  />
-- <img src="./Plots/confusion matrix svm-pca model.png"  />
-- To determine the best value for the C parameter in SVM, I used a vector of random numbers from 0 to 100, finding 10 as the optimal value.
-- <img src="./Plots/svm C parameter choose.png"  />
+<img src="./Plots/learning curve svm-pca model.png"  />
+<img src="./Plots/confusion matrix svm-pca model.png"  />
+To determine the best value for the C parameter in SVM, I used a vector of random numbers from 0 to 100, finding 10 as the optimal value.
+<img src="./Plots/svm C parameter choose.png"  />
 
 
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
