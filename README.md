@@ -45,6 +45,8 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 - Confusion matrix for XGBoost model combined with PCA
 
 <img src="./Plots/confusion matrix xgboost-pca model.png"  />
+
+
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
 | 0.88   | 0.62   | 0.61   | 0.62   |
