@@ -49,6 +49,8 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 <img src="./Plots/confusion matrix xgboost-pca model.png"  />
 
 
+- Evaluation metrics for XGBoost-PCA model
+  
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
 | 0.88   | 0.62   | 0.61   | 0.62   |
@@ -56,6 +58,8 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 ### 4. Addressing Class Imbalance
 - Despite efforts, oversampling the minority class (negative sentiment) only yielded a maximum accuracy of around 61%.
 
+- Evaluation metrics for XGBoost-oversampled model
+  
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
 | 0.83  | 0.61  | 0.62   | 0.61   |
@@ -67,7 +71,8 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 To determine the best value for the C parameter in SVM, I used a vector of random numbers from 0 to 100, finding 10 as the optimal value.
 <img src="./Plots/svm C parameter choose.png"  />
 
-
+- Evaluation metrics for SVM-PCA model
+  
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
 | 0.80   | 0.60  | 0.59   | 0.60  |
