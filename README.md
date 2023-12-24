@@ -12,7 +12,7 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - **Class Imbalance Check:** I observed an imbalance among sentiment classes, with the negative class having the lowest representation.
 - **Tokenization:** Following data cleaning, I tokenized and structured the cleaned data into a formatted DataFrame for further analysis.
 <img src="./Plots/class imbalance.png"  />
--
+- The plot above displays the count of each class within the dataset.
 
 ## Model Building
 ### 1. Blazing Text
