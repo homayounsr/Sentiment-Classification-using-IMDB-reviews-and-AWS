@@ -10,9 +10,8 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - **Data Cleaning:** After removing null values and eliminating irrelevant characters, punctuation, and stop words, my dataset was reduced to 32,505 rows and 2 columns.
 - **Labeling:** I categorized reviews into sentiment classes based on their ratings (1-3 as negative, 4-6 as neutral, 7-10 as positive).
 - **Class Imbalance Check:** I observed an imbalance among sentiment classes, with the negative class having the lowest representation.
-- <img src="./Plots/class imbalance.png"  />
 - **Tokenization:** Following data cleaning, I tokenized and structured the cleaned data into a formatted DataFrame for further analysis.
-
+<img src="./Plots/class imbalance.png"  />
 ## Model Building
 ### 1. Blazing Text
 - I initially employed Blazing Text for classification but encountered accuracy issues (~47%) due to class imbalance.
