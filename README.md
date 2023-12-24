@@ -17,7 +17,7 @@ The plot above displays the count of each class within the dataset.
 
 ## Model Building
 ### 1. Blazing Text
-- I initially employed Blazing Text for classification but encountered accuracy issues (~47%) due to class imbalance.
+- I initially employed BlazingText using AWS for classification but encountered accuracy issues (~47%) due to class imbalance.
 
 ### 2. Word2Vec Embedding & XGBoost
 Implementing Word2Vec for embedding, I trained an XGBoost model achieving around 63% accuracy for test data and 77% for training data.
