@@ -28,7 +28,7 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 **However, high dimensionality and slower processing speed were challenges faced.**
 
 - Evaluation metrics for XGBoost model
-- 
+  
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
 | -------- | -------- | -------- | -------- |
 | 0.77   | 0.63   | 0.62   | 0.63   |
