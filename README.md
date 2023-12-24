@@ -11,8 +11,9 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - **Labeling:** I categorized reviews into sentiment classes based on their ratings (1-3 as negative, 4-6 as neutral, 7-10 as positive).
 - **Class Imbalance Check:** I observed an imbalance among sentiment classes, with the negative class having the lowest representation.
 - **Tokenization:** Following data cleaning, I tokenized and structured the cleaned data into a formatted DataFrame for further analysis.
+- The plot below displays the count of each class within the dataset.
 <img src="./Plots/class imbalance.png"  />
-The plot above displays the count of each class within the dataset.
+
 
 
 ## Model Building
@@ -23,6 +24,7 @@ The plot above displays the count of each class within the dataset.
 Implementing Word2Vec for embedding, I trained an XGBoost model achieving around 63% accuracy for test data and 77% for training data.
 <img src="./Plots/learning curve xgboost model.png"  />
 <img src="./Plots/confusion matrix xgboost model.png"  />
+
 **However, high dimensionality and slower processing speed were challenges faced.**
 
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
