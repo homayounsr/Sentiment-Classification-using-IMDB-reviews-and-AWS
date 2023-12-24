@@ -80,5 +80,6 @@ To determine the best value for the C parameter in SVM, I used a vector of rando
 ## Conclusion and Insights
 Through this project, I made several key findings:
 - BlazingText cannot deal with class imbalance
+- The lack of change in the accuracy of the XGBoost model after oversampling illustrates that the issue with low accuracy may not solely be due to class imbalance. Consequently, the hypothesis regarding the inadequacy of data became more pronounced after observing the accuracy of this model.
 - Consistency in accuracy across different models (XGBoost, SVM) indicated limitations in surpassing the 63% mark.
 - Insights gained in handling class imbalances and using PCA for more efficient modeling.
