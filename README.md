@@ -23,6 +23,12 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - <img src="./Plots/confusion matrix xgboost model.png"  />
 - However, high dimensionality and slower processing speed were challenges faced.
 
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+
+
 ### 3. PCA for Dimensionality Reduction
 - To reduce dimensions while maintaining accuracy, I implemented Principal Component Analysis (PCA).
 - This significantly improved code efficiency and model building speed without compromising accuracy.
