@@ -56,7 +56,7 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 | 0.88   | 0.62   | 0.61   | 0.62   |
 
 ### 4. Addressing Class Imbalance
-- Despite efforts, oversampling the minority class (negative sentiment) only yielded a maximum accuracy of around 61%.
+- In this model I oversampled the data. However, despite efforts, oversampling the minority class (negative sentiment) only yielded a maximum accuracy of around 61% and increasing in training time.
 
 - Evaluation metrics for XGBoost-oversampled model
   
