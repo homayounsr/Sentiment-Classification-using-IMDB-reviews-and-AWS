@@ -23,10 +23,9 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 - <img src="./Plots/confusion matrix xgboost model.png"  />
 - However, high dimensionality and slower processing speed were challenges faced.
 
-| Header 1 | Header 2 | Header 3 |
-| -------- | -------- | -------- |
-| Cell 1   | Cell 2   | Cell 3   |
-| Cell 4   | Cell 5   | Cell 6   |
+| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
+| -------- | -------- | -------- | -------- |
+| 0.77   | 0.63   | 0.62   | 0.63   |
 
 
 ### 3. PCA for Dimensionality Reduction
