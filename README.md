@@ -39,12 +39,17 @@ These plots are showing the leaning curve, cost function and confusion matrix fo
 <img src="./Plots/confusion matrix xgboost-pca model.png"  />
 ### 4. Addressing Class Imbalance
 - Attempted to enhance accuracy by oversampling the minority class (negative sentiment).
-- Despite efforts, the maximum accuracy plateaued around 63%.
+- Despite efforts, the maximum accuracy plateaued around %61.
 
 ### 5. SVM with RBF Kernel
 - Explored Support Vector Machines (SVM) using an RBF kernel as an alternative model.
 - Achieved similar accuracy results (~62%) to XGBoost, reaffirming the consistency of accuracy across models.
+These plots are showing the leaning curve, cost function and confusion matrix for the SVM model.
+<img src="./Plots/learning curve svm-pca model.png"  />
+<img src="./Plots/confusion matrix svm-pca model.png"  />
 
+In order to find the best value for the C to train the SVM I used a vector of random numbders from 0 to 100 and I found 10 is a good number to build the model
+<img src="./Plots/svm C parameter choose.png"  />
 ## Conclusion and Insights
 The project highlighted several crucial findings:
 - Maximum accuracy plateaued at around 63% due to inherent challenges like class imbalance.
