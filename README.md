@@ -14,7 +14,7 @@ I collected the dataset using my web scraping code, extracting movie reviews and
 <img src="./Plots/class imbalance.png"  />
 The plot above displays the count of each class within the dataset.
 
--
+
 ## Model Building
 ### 1. Blazing Text
 - I initially employed Blazing Text for classification but encountered accuracy issues (~47%) due to class imbalance.
