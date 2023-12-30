@@ -89,7 +89,7 @@ Through this project, I made several key findings:
 - The best model is XGBoost paired with PCA. It's fast and delivers acceptable accuracy due to the number of data.
 
 Based on these results, oversampleing using RandomOverSampler method from the imblearn library was done. The plot of data after oversampling is showing below:
-<img src="./Plots/svm C parameter choose.png"  />
+<img src="./Plots/class balance.png"  />
 
 ## Conclusion and Insights
 Through this project, I made several key findings:
