@@ -85,3 +85,5 @@ The XGBoost model was rebuilt, and the output of the final model is displayed be
 | Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall | F1|
 | -------- | -------- | -------- | -------- | -------- |
 | 0.91  | 0.81 | 0.81  | 0.81   |0.81|
+
+The result showed significant improvement in the model
