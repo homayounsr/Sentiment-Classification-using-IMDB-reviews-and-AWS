@@ -81,6 +81,16 @@ To determine the best value for the C parameter in SVM, I used a vector of rando
 | -------- | -------- | -------- | -------- |
 | 0.80   | 0.60  | 0.59   | 0.60  |
 
+
+## 6. Results Analysis, Model Debuging
+Through this project, I made several key findings:
+- BlazingText cannot deal with class imbalance
+- The lack of change in the accuracy of the XGBoost model after oversampling illustrates that the issue with low accuracy may not solely be due to class imbalance. Consequently, the hypothesis regarding the inadequacy of data became more pronounced after observing the accuracy of this model.
+- The best model is XGBoost paired with PCA. It's fast and delivers acceptable accuracy due to the number of data.
+
+Based on these results, oversampleing using RandomOverSampler method from the imblearn library was done. The plot of data after oversampling is showing below:
+<img src="./Plots/svm C parameter choose.png"  />
+
 ## Conclusion and Insights
 Through this project, I made several key findings:
 - BlazingText cannot deal with class imbalance
