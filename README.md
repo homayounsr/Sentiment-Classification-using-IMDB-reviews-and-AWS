@@ -56,33 +56,6 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 | 0.88   | 0.62   | 0.61   | 0.62   |
 
 ### 4. Addressing Class Imbalance
-- In this model I oversampled the data. However, despite efforts, Although oversampling the minority class (negative sentiment) increased the power of model in predicting class 0, only yielded a maximum accuracy of around 61% and increasing in training time. 
-  
-- Confusion matrix for XGBoost model trained with oversampled data with PCA
-
-<img src="./Plots/confusion matrix xgboost-oversample model.png"  />
-
-- Evaluation metrics for XGBoost-oversampled model
-  
-| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
-| -------- | -------- | -------- | -------- |
-| 0.83  | 0.61  | 0.62   | 0.61   |
-
-### 5. SVM with RBF Kernel
-- Exploring Support Vector Machines (SVM) with an RBF kernel, I achieved similar accuracy (~61%) to XGBoost.
-<img src="./Plots/learning curve svm-pca model.png"  />
-<img src="./Plots/confusion matrix svm-pca model.png"  />
-To determine the best value for the C parameter in SVM, I used a vector of random numbers from 0 to 100, finding 10 as the optimal value.
-<img src="./Plots/svm C parameter choose.png"  />
-
-- Evaluation metrics for SVM-PCA model
-  
-| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall |
-| -------- | -------- | -------- | -------- |
-| 0.80   | 0.60  | 0.59   | 0.60  |
-
-
-## 6. Results Analysis, Model Debuging
 Through this project, I made several key findings:
 - BlazingText cannot deal with class imbalance
 - The lack of change in the accuracy of the XGBoost model after oversampling illustrates that the issue with low accuracy may not solely be due to class imbalance. Consequently, the hypothesis regarding the inadequacy of data became more pronounced after observing the accuracy of this model.
@@ -91,10 +64,24 @@ Through this project, I made several key findings:
 Based on these results, oversampleing using RandomOverSampler method from the imblearn library was done. The plot of data after oversampling is showing below:
 <img src="./Plots/class balance.png"  />
 
-## Conclusion and Insights
-Through this project, I made several key findings:
-- BlazingText cannot deal with class imbalance
-- The lack of change in the accuracy of the XGBoost model after oversampling illustrates that the issue with low accuracy may not solely be due to class imbalance. Consequently, the hypothesis regarding the inadequacy of data became more pronounced after observing the accuracy of this model.
-- Consistency in accuracy across different models (XGBoost, SVM) indicated limitations in surpassing the 63% mark.
-- Insights gained in handling class imbalances and using PCA for more efficient modeling.
-- The best model is XGBoost paired with PCA. It's fast and delivers acceptable accuracy due to the number of data.
+The XGBoost model was rebuilt, and the output of the final model is displayed below:
+
+- Learning rate for XGBoost model trained with oversampled data with PCA
+
+<img src="./Plots/balance_pca_xgboost_learning_curve.png"  />
+
+- Cost funstion for XGBoost model trained with oversampled data with PCA
+
+<img src="./Plots/balance_pca_xgboost_cost.png"  />
+
+- Confusion matrix for XGBoost model trained with oversampled data with PCA
+
+<img src="./Plots/balance_pca_xgboost_confusion.png"  />
+
+
+
+- Evaluation metrics for XGBoost-PCA oversampled model
+  
+| Accuracy on the training dataset | Accuracy on the test dataset | Precision | Recall | F1|
+| -------- | -------- | -------- | -------- | -------- |
+| 0.91  | 0.81 | 0.81  | 0.81   |0.81|
