@@ -56,7 +56,7 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 | 0.88   | 0.62   | 0.61   | 0.62   |
 
 ### 4. Addressing Class Imbalance
-Based on these results, synthesizing reviews using RandomOverSampler method from the imblearn library was done. The plot of data after oversampling is showing below:
+Based on these results, synthesizing reviews using RandomOverSampler method from the imblearn library was done. The plot of data after synthesizing is showing below:
 <img src="./Plots/class balance.png"  />
 
 The XGBoost model was rebuilt, and the output of the final model is displayed below:
