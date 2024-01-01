@@ -56,12 +56,7 @@ Implementing Word2Vec for embedding, I trained an XGBoost model achieving around
 | 0.88   | 0.62   | 0.61   | 0.62   |
 
 ### 4. Addressing Class Imbalance
-Through this project, I made several key findings:
-- BlazingText cannot deal with class imbalance
-- The lack of change in the accuracy of the XGBoost model after oversampling illustrates that the issue with low accuracy may not solely be due to class imbalance. Consequently, the hypothesis regarding the inadequacy of data became more pronounced after observing the accuracy of this model.
-- The best model is XGBoost paired with PCA. It's fast and delivers acceptable accuracy due to the number of data.
-
-Based on these results, oversampleing using RandomOverSampler method from the imblearn library was done. The plot of data after oversampling is showing below:
+Based on these results, synthesizing reviews using RandomOverSampler method from the imblearn library was done. The plot of data after oversampling is showing below:
 <img src="./Plots/class balance.png"  />
 
 The XGBoost model was rebuilt, and the output of the final model is displayed below:
